@@ -123,7 +123,7 @@ equal.addEventListener('click', function () {
 let bracketOpen = false
 
 brackets.addEventListener('click', function () {
-    if (checkLength() || !isValidSyntax()) {
+    if (checkLength()) {
         return
     }
     if (!bracketOpen) {
