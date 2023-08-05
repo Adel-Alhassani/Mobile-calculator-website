@@ -149,7 +149,7 @@ textarea {
 
 body {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #btns button {
