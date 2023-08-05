@@ -278,3 +278,10 @@ body {
         background-color: #008E06;
     }
 }
+
+
+@media (min-width:400px) {
+    #btns button {
+        border-radius: 10px;
+    }
+}
