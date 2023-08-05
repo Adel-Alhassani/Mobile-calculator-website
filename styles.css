@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ************************************ */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+input,
+button,
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#InputAndOutput {
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#InputAndOutput #output {
+    font-size: 50px;
+    color: white;
+    align-self: flex-end;
+    padding-bottom: 185px;
+}
+
+#InputAndOutput #inputDiv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#InputAndOutput #inputDiv #backspace {
+    align-self: center;
+}
+
+#InputAndOutput #inputDiv #backspace:hover {
+    animation: click 0.3s ease-out;
+}
+
+#InputAndOutput #inputDiv input {
+    width: 87%;
+    font-size: 30px;
+    color: white;
+    background-color: #000000;
+    border: none;
+}
+
+#InputAndOutput #line {
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+}
+
+#btns {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#btns button {
+    color: white;
+    background-color: #252525;
+    font-size: 35px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+}
+
+#btns button:focus {
+    animation: click 0.3s ease-out;
+}
+
+
+#btns #equal {
+    grid-column: 3/5;
+    border-radius: 55px;
+    font-size: 55px;
+}
+
+#btns .operations {
+    color: #4DC722;
+}
+
+#btns #brackets {
+    color: #4DC722;
+}
+
+#btns #equal {
+    color: white;
+    background-color: #008E06;
+}
+
+#btns #equal:focus {
+    animation: clickEqual 0.3s ease-out;
+}
+
+#btns #clear {
+    color: red;
+}
+
+@keyframes click {
+    0% {
+        background-color: #252525;
+    }
+
+    50% {
+        background-color: #5a5a5a;
+    }
+
+    100% {
+        background-color: #252525;
+    }
+}
+
+@keyframes clickEqual {
+    0% {
+        background-color: #008E06;
+    }
+
+    50% {
+        background-color: #0a5800;
+    }
+
+    100% {
+        background-color: #008E06;
+    }
+}
